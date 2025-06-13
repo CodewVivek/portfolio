@@ -39,7 +39,7 @@ const projects = [
   {
     title: "Skypher",
     description: "Startup Connect empowers startups to scale efficiently with a modern platform for growth. Startups can create compelling profiles, attract top talent, and grow their customer base using AI-powered insights and interactive analytics. With robust developer APIs, seamless team collaboration tools, and enterprise-grade security, it’s the ultimate hub for transforming startup visions into reality",
-    tech: ["Next.js", "Tailwind CSS", "React.js", "Supabase", "ChatGpt API"],
+    tech: ["Next.js", "Tailwind CSS", "React.js", "Supabase", "ChatGpt API","Node.js","Express.js"],
     features: [
       "Advanced Talent Attraction Tools",
       "Enhanced Startup Profile Creation",
