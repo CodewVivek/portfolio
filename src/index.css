@@ -8,6 +8,17 @@ body {
 
 }
 
+/* In your CSS file */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 /* global.css or index.css */
 .stack-container {
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -30,15 +41,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  /* IE/Edge */
-  scrollbar-width: none;
-  /* Firefox */
 }
