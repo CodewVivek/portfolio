@@ -40,3 +40,67 @@
 
 ## 🗂 Project Structure
 
+src/
+
+├── components/ 
+                 
+                 ── Header.jsx
+                 ── Hero.jsx
+                 ── About.jsx
+                 ── Projects.jsx
+                 ── Contact.jsx
+                 ── Footer.jsx
+
+
+├── assets/ 
+                 ── (images and logos)
+
+|── App.jsx
+
+|── main.jsx
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/vivekmanikonda/portfolio.git
+cd portfolio
+npm install
+npm run dev
+npm run build
+
+--
+
+👤 About Me
+
+
+Hi, I'm Vivek , a CSE undergrad passionate about full-stack development, modern UI/UX, and building scalable, real-world applications.
+
+🔭 Currently building:  startup visibility platform
+
+🧠 Learning: Backend architecture & cloud hosting
+
+⚡ Fun fact: I obsess over clean UIs and pixel-perfect layouts
+
+📬 Contact
+
+💼 LinkedIn
+
+🐙 GitHub
+
+📧 manikondasaivivek@gmail.com
+
+⭐ Support---
+
+If you like this project:
+
+⭐ Star this repo
+
+📢 Share it with others
+
+💬 Feedback welcome!
+
