@@ -16,7 +16,7 @@ import { SiNetlify } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaGithub } from "react-icons/fa";
 const SkillGroup = ({ title, skills }) => (
-    < div className = "mb-10" >
+    < div className="mb-10" >
         <h3 className="text-xl font-semibold mb-4">{title}</h3>
         <div className="flex flex-wrap gap-6">
             {skills.map(({ name, icon: Icon }, idx) => (
@@ -31,7 +31,7 @@ const SkillGroup = ({ title, skills }) => (
     </div >
 );
 
-const MySkills = () => {
+const Skills = () => {
     const frontEndSkills = [
         { name: 'JavaScript', icon: IoLogoJavascript },
         { name: 'React.js', icon: SiReactquery },
@@ -61,7 +61,7 @@ const MySkills = () => {
     ];
 
     return (
-        <section className="bg-black text-white py-20 px-5 ">
+        <section className="bg-black text-white py-20 px-5 " id='skills'>
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold mb-2">My Skills</h2>
                 <p className="text-gray-400 mb-12">
@@ -77,4 +77,4 @@ const MySkills = () => {
     );
 };
 
-export default MySkills;
+export default Skills;

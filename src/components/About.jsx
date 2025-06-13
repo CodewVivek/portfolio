@@ -12,14 +12,14 @@ const About = () => {
   };
 
   return (
-    <section className="py-16 px-6 bg-black text-white">
+    <section className="py-16 px-6 bg-black text-white " id='About'>
 
       <div className="flex flex-col lg:flex-row justify-center items-start gap-10">
 
         {/* LEFT SIDE - Bio */}
         <div className="flex-1 max-w-xl">
-          <div className="text-3xl font-bold mb-2">SAI VIVEK MANIKONDA</div>
-          <div className="text-gray-400 text-xl mb-4">Software Engineer</div>
+          <div className="text-3xl font-bold mb-1">SAI VIVEK MANIKONDA</div>
+          <div className="text-gray-400 text-xl mb-4">Software Developer</div>
 
           {/* Contact Info */}
           <div className="text-md mb-5 flex gap-4 flex-wrap">

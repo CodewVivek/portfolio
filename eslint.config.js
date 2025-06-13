@@ -15,6 +15,7 @@ export default [
         ecmaFeatures: { jsx: true },
         sourceType: 'module',
       },
+      darkMode: 'class',
     },
     plugins: {
       'react-hooks': reactHooks,

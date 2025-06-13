@@ -4,7 +4,7 @@ body {
   margin-top: 20px;
   margin-right: 200px;
   margin-left: 200px;
-  background-color: rgb(251, 246, 246);
+  background-color: rgb(0, 0, 0);
 
 }
 
@@ -30,4 +30,15 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
