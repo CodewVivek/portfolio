@@ -1,13 +1,42 @@
-# React + Vite
+# ⚡ Vivek Manikonda — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A clean, fast, responsive portfolio built using React, Vite, and Tailwind CSS. Showcasing real-world projects, tech skills, and resume-level frontend experience.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat-square)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat-square)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white&style=flat-square)
+![Lucide Icons](https://img.shields.io/badge/-Lucide%20Icons-E1E1E1?style=flat-square&logo=feather&logoColor=black)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌍 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# portfolio
+🔗 [https://vivekmanikonda.vercel.app](https://vivekmanikonda.vercel.app)
+
+---
+
+
+---
+
+## 💡 Features
+
+- 🌓 Dark mode toggle with global ThemeProvider
+- 🎯 Responsive design across mobile, tablet, and desktop
+- 🚀 Vite-powered fast dev server and HMR
+- 🧠 Custom project showcase section with scrollable image previews
+- 🧩 Lucide Icons used for clean SVG styling
+- 🛠 Easily extendable and modular code
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS, Vite, Lucide Icons
+- **State/Context**: React Context API for theme handling
+- **Deployment**: Netlify
+- **Other**: Responsive layout, utility-first CSS, accessibility-focused
+
+---
+
+## 🗂 Project Structure
+
