@@ -139,7 +139,7 @@ const container = {
     margin: 0,
     display: "grid",
     gridTemplateColumns: "repeat(2, 1fr)",
-    gap: 30,
+    gap: 40,
     width: 40,
     justifyContent: "center",
     alignItems: "center",
@@ -160,7 +160,7 @@ const cardContent = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: 8,
+    gap: 20,
 }
 
 const techName = {

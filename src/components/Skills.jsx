@@ -1,77 +1,106 @@
-import React from 'react';
-import { GitBranch } from 'lucide-react';
-import { RiVercelLine } from "react-icons/ri";
-import { FaNode } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiReactquery } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaJava } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
-import { SiSupabase } from "react-icons/si";
-import { SiNetlify } from "react-icons/si";
+import React from "react";
+import {
+    FaNode, FaHtml5, FaCss3Alt, FaJava, FaPython, FaGithub,
+    FaBootstrap, FaJs, FaReact, FaGitAlt
+} from "react-icons/fa";
+import {
+    SiMongodb, SiSupabase, SiNetlify, SiMysql
+} from "react-icons/si";
+import {
+    RiVercelLine, RiTailwindCssFill, RiNextjsFill
+} from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
-import { FaGithub } from "react-icons/fa";
-const SkillGroup = ({ title, skills }) => (
-    < div className="mb-10" >
+import { IoLogoVercel } from "react-icons/io5";
+import { motion } from "framer-motion";
+
+const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i = 1) => ({
+        opacity: 1,
+        y: 0,
+        transition: { delay: i * 0.1, duration: 0.6, ease: "easeOut" }
+    }),
+};
+
+const SkillGroup = ({ title, skills, index }) => (
+    <motion.div
+        className="mb-10"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        custom={index}
+    >
         <h3 className="text-xl font-semibold mb-4">{title}</h3>
         <div className="flex flex-wrap gap-6">
-            {skills.map(({ name, icon: Icon }, idx) => (
+            {skills.map(({ name, icon }, idx) => (
                 <div key={idx} className="flex flex-col items-center text-sm">
-                    <div>
-                        <Icon size={28} />
-                    </div>
-                    <p className="mt-2 text-center text-gray-300">{name}</p>
+                    <div className="text-3xl">{icon}</div>
+                    <p className="mt-2 text-center text-white">{name}</p>
                 </div>
             ))}
         </div>
-    </div >
+    </motion.div>
 );
 
 const Skills = () => {
     const frontEndSkills = [
-        { name: 'JavaScript', icon: IoLogoJavascript },
-        { name: 'React.js', icon: SiReactquery },
-        { name: 'HTML', icon: FaHtml5 },
-        { name: 'CSS', icon: FaCss3Alt },
-        { name: 'Tailwind CSS', icon: RiTailwindCssFill },
+        { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+        { name: "React.js", icon: <FaReact className="text-blue-500" /> },
+        { name: "Next.js", icon: <RiNextjsFill className="text-white" /> },
+        { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+        { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+        { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
+        { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-cyan-400" /> },
     ];
 
     const backEndSkills = [
-        { name: 'Node.js', icon: FaNode },
-        { name: 'Java', icon: FaJava },
-        { name: 'Python', icon: FaPython },
+        { name: "Node.js", icon: <FaNode className="text-green-500" /> },
+        { name: "Java", icon: <FaJava className="text-red-600" /> },
+        { name: "Python", icon: <FaPython className="text-yellow-300" /> },
     ];
 
     const dbSkills = [
-        { name: 'MongoDB', icon: SiMongodb },
-        { name: 'MySQL', icon: GrMysql },
-        { name: 'Supabase', icon: SiSupabase },
+        { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
+        { name: "Supabase", icon: <SiSupabase className="text-white" /> },
     ];
 
     const tools = [
-        { name: 'Git', icon: GitBranch },
-        { name: 'GitHub', icon: FaGithub },
-        { name: 'VS Code', icon: VscVscode },
-        { name: 'Netlify', icon: SiNetlify },
-        { name: 'Vercel', icon: RiVercelLine },
+        { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
+        { name: "GitHub", icon: <FaGithub className="text-white" /> },
+        { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
+        { name: "Netlify", icon: <SiNetlify className="text-green-400" /> },
+        { name: "Vercel", icon: <IoLogoVercel className="text-white" /> },
     ];
 
     return (
-        <section className="bg-black text-white py-20 px-5 " id='skills'>
+        <section className="bg-black text-white py-20 px-5" id="skills">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold mb-2">My Skills</h2>
-                <p className="text-gray-400 mb-12">
+                <motion.h2
+                    className="text-3xl font-bold mb-2"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeIn}
+                >
+                    My Skills
+                </motion.h2>
+                <motion.p
+                    className="text-gray-400 mb-12"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeIn}
+                    custom={0.5}
+                >
                     Technologies and tools I've worked with throughout my projects and experience
-                </p>
+                </motion.p>
 
-                <SkillGroup title="Front End" skills={frontEndSkills} />
-                <SkillGroup title="Back End" skills={backEndSkills} />
-                <SkillGroup title="Databases" skills={dbSkills} />
-                <SkillGroup title="Tools & Platforms" skills={tools} />
+                <SkillGroup title="Front End" skills={frontEndSkills} index={0.2} />
+                <SkillGroup title="Back End" skills={backEndSkills} index={0.4} />
+                <SkillGroup title="Databases" skills={dbSkills} index={0.6} />
+                <SkillGroup title="Tools & Platforms" skills={tools} index={0.8} />
             </div>
         </section>
     );
