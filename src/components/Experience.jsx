@@ -52,10 +52,7 @@ const Experience = () => {
                             <span className="text-white text-sm font-medium px-2 py-1 rounded">JWT</span>
                         </div>
 
-                        <div className="flex gap-4 mt-6 text-white">
-                            <a href="https://github.com/vivekmanikonda/CCBOND" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline">
-                                <FaGithub size={18} /> GitHub
-                            </a>
+                        <div className="flex  mt-6 text-white">
                             <a href="https://ccbonds.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline">
                                 <ExternalLink size={18} /> Live Site
                             </a>

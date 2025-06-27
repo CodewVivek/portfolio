@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: "Skypher",
-    description: "Skypher is a dynamic platform built to empower startups by streamlining the discovery, submission, and showcasing of innovative ventures.",
-    tech: ["React.js", "Tailwind CSS", "Supabase"],
+    title: "Launch It",
+    description: "Launch It is a dynamic platform built to empower startups by streamlining the discovery, submission, and showcasing of innovative ventures.",
+    tech: ["React.js", "Tailwind CSS", "Supabase", "Express js"],
     features: [
       "Advanced Talent Attraction Tools",
       "Enhanced Startup Profile Creation",
-      "AI - Powered Analytics",
+      "AI-Powered Analytics",
       "Customer Growth and Marketing Tools",
       "Team Collaboration Tools",
     ],
-    images: ["/images/p1.png", "/images/p2.png", "/images/p3.png", "/images/p4.png"],
+    images: ["/images/l1.png", "/images/l2.png", "/images/l3.png", "/images/l4.png", "/images/l5.png"],
     live: "https://matchwize.vercel.app",
   },
   {
-    title: "Thrive Daily",
+    title: "CCBOND",
     description: "ThriveDaily helps users build daily habits, track growth, and stay motivated through journals and goal trackers.",
     tech: ["TypeScript", "React.js", "Supabase", "Tailwind CSS", "ChatGPT API"],
     features: [
@@ -27,19 +27,22 @@ const projects = [
       "Personalized goal setting",
       "View weekly charts & streaks",
     ],
-    images: ["/images/p1.png", "/images/p2.png", "/images/p3.png", "/images/p4.png"],
-    live: "https://github.com/CodewVivek/thriveadaily",
+    images: ["/images/cc0.png", "/images/cc1.png", "/images/cc2.png", "/images/cc3.png", "/images/cc4.png"],
+    live: "https://ccbond.app/enquiry",
   },
   {
-    title: "Pothole Alert App",
-    description: "A Flutter-based app to crowdsource pothole reports and alert drivers using Google Maps.",
+    title: "ClearNav – A Pothole Alert Navigation Application",
+    description: "A user-centric mobile application that enhances road safety through real-time pothole alerts and crowdsourced hazard reporting.",
     tech: ["Flutter", "Dart", "Firebase", "Google Maps API"],
     features: [
-      "Google Maps integration with hazard alerts",
-      "Crowdsourced road condition data",
+      "Live Location Tracking",
+      "Google Maps Integration",
+      "Audio Alerts for Driver Safety",
+      "Cross-Platform App Development",
+      "Image-Based Severity Detection",
     ],
-    images: ["/images/p1.png", "/images/p2.png", "/images/p3.png", "/images/p4.png"],
-    live: "https://github.com/CodewVivek/thriveadaily",
+    images: ["/images/cl1.png"],
+    live: null, // Disabled project
   },
   {
     title: "Facial Emotion Recognition",
@@ -48,9 +51,12 @@ const projects = [
     features: [
       "Real-time facial detection",
       "Emotion classification with CNN",
+      "Uses deep learning CNN model",
+      "Built with Keras and TensorFlow",
+      "Pretrained Haarcascade with OpenCV",
     ],
-    images: ["/images/p1.png", "/images/p2.png", "/images/p3.png", "/images/p4.png"],
-    live: "https://github.com/CodewVivek/thriveadaily",
+    images: ["/images/emoition_detection.png"],
+    live: null, // Disabled project
   },
 ];
 
@@ -86,7 +92,7 @@ const Projects = () => {
                   key={i}
                   src={img}
                   alt={`${project.title} screenshot ${i + 1}`}
-                  className="rounded-lg w-full object-cover"
+                  className="w-full object-cover"
                 />
               ))}
             </div>
@@ -116,14 +122,23 @@ const Projects = () => {
               </div>
 
               <div className="mt-6">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-black font-medium rounded bg-white px-4 py-2 hover:bg-black hover:text-white transition"
-                >
-                  <ExternalLink size={16} /> View Project
-                </a>
+                {project.live ? (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-black font-medium rounded bg-white px-4 py-2 hover:bg-black hover:text-white transition"
+                  >
+                    <ExternalLink size={16} /> View Project
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => alert("Project expired")}
+                    className="inline-flex items-center gap-2 text-sm text-gray-300 font-medium rounded bg-gray-400 px-4 py-2 cursor-not-allowed"
+                  >
+                    <ExternalLink size={16} /> Project Expired
+                  </button>
+                )}
               </div>
             </div>
           </motion.div>
