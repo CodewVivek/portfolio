@@ -42,7 +42,7 @@ const projects = [
       "Image-Based Severity Detection",
     ],
     images: ["/images/cl1.png"],
-    live: null, // Disabled project
+    live: null,
   },
   {
     title: "Facial Emotion Recognition",
@@ -56,7 +56,7 @@ const projects = [
       "Pretrained Haarcascade with OpenCV",
     ],
     images: ["/images/emoition_detection.png"],
-    live: null, // Disabled project
+    live: null,
   },
 ];
 
@@ -83,7 +83,7 @@ const Projects = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="flex flex-col md:flex-row gap-4 bg-[#0f0f0f] p-4 rounded-xl shadow-lg border border-gray-700 mr-26"
+            className="flex flex-col md:flex-row gap-4 bg-[#0f0f0f] p-4 rounded-xl shadow-lg border border-gray-700 mr-26 "
           >
             {/* Scrollable images */}
             <div className="md:w-1/2 max-h-[360px] overflow-y-auto rounded-md scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 scrollbar-hide">

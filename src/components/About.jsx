@@ -61,7 +61,6 @@ const About = () => {
             </button>
             <a href="https://github.com/CodewVivek" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a>
             <a href="mailto:something@gmail.com"><Mail size={24} /></a>
-            <a href="https://x.com/jodvk11" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter size={24} /></a>
             <a href="https://www.linkedin.com/in/sai-vivek-manikonda-10b734249/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={24} /></a>
           </div>
         </motion.div>

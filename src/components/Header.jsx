@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Sun } from 'lucide-react';
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,20 +19,17 @@ const Header = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mr-124">
           <div className="flex h-16 items-center">
-            <a className="text-lg font-bold text-white">
+            <a className="text-lg font-bold text-white" href="#About">
               VIVEK
             </a>
           </div>
           <div className="hidden md:flex items-center space-x-6 text-white ">
             <a href="#About">About</a>
             <a href="#experience">Experience</a>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
-            <button>
-              <Sun />
-            </button>
           </div>
         </div>
       </div>

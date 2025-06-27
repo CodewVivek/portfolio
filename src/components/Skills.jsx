@@ -34,7 +34,7 @@ const SkillGroup = ({ title, skills, index }) => (
         <h3 className="text-xl font-semibold mb-4">{title}</h3>
         <div className="flex flex-wrap gap-6">
             {skills.map(({ name, icon }, idx) => (
-                <div key={idx} className="flex flex-col items-center text-sm">
+                <div key={idx} className="flex flex-col items-center text-sm transition-transform duration-200 hover:scale-110 ">
                     <div className="text-3xl">{icon}</div>
                     <p className="mt-2 text-center text-white">{name}</p>
                 </div>
@@ -78,7 +78,7 @@ const Skills = () => {
         <section className="bg-black text-white py-20 px-5" id="skills">
             <div className="max-w-6xl mx-auto">
                 <motion.h2
-                    className="text-3xl font-bold mb-2"
+                    className="text-3xl font-bold mb-2 "
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
