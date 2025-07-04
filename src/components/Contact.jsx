@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-black text-white min-h-screen">
+    <section id="contact" className="bg-black text-white min-h-screen mr-30  ">
       <motion.div
         className="max-w-6xl mx-auto"
         initial="hidden"
@@ -66,7 +66,7 @@ const Contact = () => {
           Contact Me
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 ">
           {/* Left Column */}
           <motion.div
             className="space-y-6"
