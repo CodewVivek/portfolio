@@ -18,17 +18,19 @@ const projects = [
     live: "https://matchwize.vercel.app",
   },
   {
-    title: "CCBOND",
-    description: "ThriveDaily helps users build daily habits, track growth, and stay motivated through journals and goal trackers.",
-    tech: ["TypeScript", "React.js", "Supabase", "Tailwind CSS", "ChatGPT API"],
-    features: [
-      "Track daily calorie intake",
-      "Log workout sessions and productivity",
-      "Personalized goal setting",
-      "View weekly charts & streaks",
+    "title": "CCBOND",
+    "description": "CCBOND is a comprehensive B2B networking platform that facilitates business connections, lead generation, and communication between companies through enquiries, sales opportunities, and product listings.",
+    "tech": ["React.js", "Tailwind CSS", "MySQL", "Twilio"],
+    "features": [
+      "Business enquiry and sales posting",
+      "Real-time chat and messaging system",
+      "Company profile management",
+      "Multi-tenant architecture with role-based access",
+      "File sharing and document management",
+      "Mobile verification and authentication"
     ],
-    images: ["/images/cc0.png", "/images/cc1.png", "/images/cc2.png", "/images/cc3.png", "/images/cc4.png"],
-    live: "https://ccbond.app/enquiry",
+    "images": ["/images/cc0.png", "/images/cc1.png", "/images/cc2.png", "/images/cc3.png", "/images/cc4.png"],
+    "live": "https://ccbond.app/enquiry"
   },
   {
     title: "ClearNav – A Pothole Alert Navigation Application",
