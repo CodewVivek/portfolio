@@ -39,7 +39,7 @@ const About = () => {
           <div className="text-md mb-5 flex gap-4 flex-wrap">
             <div className="flex items-center gap-1">
               <Mail size={18} />
-              <a href="mailto:skypher206@gmail.com">skypher206@gmail.com</a>
+              <a href="mailto: vivekmanikonda113@gmail.com"> vivekmanikonda113@gmail.com</a>
             </div>
             <div className="flex items-center gap-1">
               <MapPinXInside size={18} />
