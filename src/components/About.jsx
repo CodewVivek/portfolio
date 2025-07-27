@@ -22,54 +22,36 @@ const About = () => {
   };
 
   return (
-    <section className="py-16 px-6 bg-black text-white" id="About">
-      <motion.div
-        className="flex flex-col lg:flex-row justify-center items-start gap-10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeIn}
-      >
-        {/* LEFT SIDE */}
-        <motion.div className="flex-1 max-w-xl" variants={fadeIn} custom={0.2}>
-          <div className="text-3xl font-bold mb-1">SAI VIVEK MANIKONDA</div>
-          <div className="text-gray-400 text-xl mb-4">Software Developer</div>
-
-          {/* Contact Info */}
-          <div className="text-md mb-5 flex gap-4 flex-wrap">
-            <div className="flex items-center gap-1">
-              <Mail size={18} />
-              <a href="mailto: vivekmanikonda113@gmail.com"> vivekmanikonda113@gmail.com</a>
-            </div>
-            <div className="flex items-center gap-1">
-              <MapPinXInside size={18} />
-              <p>India</p>
-            </div>
+    <section className="py-12 px-4 w-full bg-black text-white" id="About">
+      <div className="max-w-xl mx-auto">
+        <div className="text-3xl font-bold mb-2 text-left">SAI VIVEK MANIKONDA</div>
+        <div className="text-gray-400 text-xl mb-4 text-left">Software Developer</div>
+        <div className="flex flex-wrap gap-4 mb-4 text-left text-base">
+          <div className="flex items-center gap-2">
+            <Mail size={18} />
+            <a href="mailto: vivekmanikonda113@gmail.com">vivekmanikonda113@gmail.com</a>
           </div>
-
-          <p className="text-base text-justify leading-relaxed mb-5">
-            A goal-oriented software developer with experience in building web applications using modern technologies like React, Node.js, and more. Seeking to leverage my technical skills to deliver exceptional user experiences.
-          </p>
-
-          {/* Resume & Social */}
-          <div className="flex flex-wrap gap-6 items-center">
-            <button
-              onClick={DownloadResume}
-              className="flex items-center gap-2 px-4 py-2 bg-blue-600 rounded hover:bg-blue-700"
-            >
-              <ArrowDownToLine /> Resume
-            </button>
-            <a href="https://github.com/CodewVivek" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a>
-            <a href="mailto:something@gmail.com"><Mail size={24} /></a>
-            <a href="https://www.linkedin.com/in/sai-vivek-manikonda-10b734249/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={24} /></a>
+          <div className="flex items-center gap-2">
+            <MapPinXInside size={18} />
+            <span>India</span>
           </div>
-        </motion.div>
-
-        {/* RIGHT SIDE */}
-        <motion.div className="flex-1 max-w-xl" variants={fadeIn} custom={0.4}>
-          <TechStackShuffle />
-        </motion.div>
-      </motion.div>
+        </div>
+        <p className="text-base leading-relaxed mb-6 text-left">
+          A goal-oriented software developer with experience in building web applications using modern technologies like React, Node.js, and more. Seeking to leverage my technical skills to deliver exceptional user experiences.
+        </p>
+        <div className="flex flex-wrap gap-6 items-center mb-8">
+          <button
+            onClick={DownloadResume}
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 text-base"
+          >
+            <ArrowDownToLine /> Resume
+          </button>
+          <a href="https://github.com/CodewVivek" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a>
+          <a href="mailto:vivekmanikonda113@gmail.com"><Mail size={24} /></a>
+          <a href="https://www.linkedin.com/in/sai-vivek-manikonda-10b734249/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={24} /></a>
+        </div>
+        <TechStackShuffle />
+      </div>
     </section>
   );
 };

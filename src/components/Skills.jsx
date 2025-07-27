@@ -75,10 +75,10 @@ const Skills = () => {
     ];
 
     return (
-        <section className="bg-black text-white py-20 px-5" id="skills">
+        <section className="bg-black text-white py-16 px-4 sm:px-6 md:px-10" id="skills">
             <div className="max-w-6xl mx-auto">
                 <motion.h2
-                    className="text-3xl font-bold mb-2 "
+                    className="text-2xl sm:text-3xl font-bold mb-2 "
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
@@ -87,7 +87,7 @@ const Skills = () => {
                     My Skills
                 </motion.h2>
                 <motion.p
-                    className="text-gray-400 mb-12"
+                    className="text-gray-400 mb-8 sm:mb-12 text-sm sm:text-base"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}

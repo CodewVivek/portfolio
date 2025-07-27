@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-black text-white min-h-screen mr-30  ">
+    <section id="contact" className="bg-black text-white min-h-screen px-4 sm:px-6 md:px-10 py-16">
       <motion.div
         className="max-w-6xl mx-auto"
         initial="hidden"
@@ -56,7 +56,7 @@ const Contact = () => {
         variants={fadeIn}
       >
         <motion.h2
-          className="text-3xl font-bold mb-10 text-center"
+          className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-10 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -66,7 +66,7 @@ const Contact = () => {
           Contact Me
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 ">
           {/* Left Column */}
           <motion.div
             className="space-y-6"
@@ -76,21 +76,21 @@ const Contact = () => {
             variants={fadeIn}
             custom={0.4}
           >
-            <h3 className="text-xl font-semibold">Get In Touch</h3>
+            <h3 className="text-lg sm:text-xl font-semibold">Get In Touch</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
-                <a href="mailto:vivekmanikonda113@gmail.com" className="text-gray-400">
+                <a href="mailto:vivekmanikonda113@gmail.com" className="text-gray-400 text-sm sm:text-base">
                   vivekmanikonda113@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" />
-                <span className="text-gray-400">+91 XXXXX XXXXX</span>
+                <span className="text-gray-400 text-sm sm:text-base">+91 XXXXX XXXXX</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5" />
-                <span className="text-gray-400">India</span>
+                <span className="text-gray-400 text-sm sm:text-base">India</span>
               </div>
               <div className="flex items-center gap-3">
                 <Linkedin className="w-5 h-5" />
@@ -98,7 +98,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/vivekmanikonda"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-400"
+                  className="text-gray-400 text-sm sm:text-base"
                 >
                   linkedin.com/in/vivekmanikonda
                 </a>
@@ -135,7 +135,7 @@ const Contact = () => {
                     {error}
                   </p>
                 )}
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm mb-2">
                       Name
@@ -147,7 +147,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Your name"
                       required
-                      className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700"
+                      className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700 text-sm sm:text-base"
                     />
                   </div>
                   <div>
@@ -161,7 +161,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Your email"
                       required
-                      className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700"
+                      className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700 text-sm sm:text-base"
                     />
                   </div>
                 </div>
@@ -176,13 +176,13 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your message"
                     required
-                    className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700"
+                    className="w-full p-2 rounded bg-gray-900 text-white border border-gray-700 text-sm sm:text-base"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-2 px-4 rounded bg-white text-black hover:bg-gray-200 transition"
+                  className="w-full py-2 px-4 rounded bg-white text-black hover:bg-gray-200 transition text-sm sm:text-base"
                 >
                   {isSubmitting ? "Sending..." : "Submit Message"}
                 </button>

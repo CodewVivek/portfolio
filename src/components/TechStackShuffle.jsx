@@ -125,58 +125,58 @@ export default function TechStackShuffle() {
 }
 
 // Styles
+// Responsive styles using Tailwind
 const pageContainer = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     gap: 20,
-
-}
+};
 
 const container = {
     listStyle: "none",
     padding: 0,
     margin: 0,
     display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: 40,
-    width: 40,
+    gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+    gap: 20,
+    width: "100%",
+    maxWidth: 320,
     justifyContent: "center",
     alignItems: "center",
-}
+};
 
 const item = {
-    width: 100,
-    height: 100,
+    width: "80px",
+    height: "80px",
     borderRadius: 10,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backdropFilter: "blur(6px)",
-
-}
+};
 
 const cardContent = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    gap: 20,
-}
+    gap: 10,
+};
 
 const techName = {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: 500,
-}
+};
 
 const shuffleButton = {
     display: "flex",
     alignItems: "center",
     gap: 8,
-    padding: "10px 16px",
+    padding: "8px 12px",
     borderRadius: 8,
     fontWeight: 500,
     cursor: "pointer",
     border: "none",
     transition: "all 0.2s ease",
     marginTop: 5,
-}
+};

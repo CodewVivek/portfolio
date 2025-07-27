@@ -14,7 +14,7 @@ const fadeIn = {
 
 const Experience = () => {
     return (
-        <section className="bg-white text-black py-20 px-5 dark:bg-black dark:text-white transition-colors duration-300" id="experience">
+        <section className="bg-white text-black py-16 px-4 sm:px-6 md:px-10 dark:bg-black dark:text-white transition-colors duration-300" id="experience">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -22,22 +22,22 @@ const Experience = () => {
                 variants={fadeIn}
                 className="max-w-4xl mx-auto"
             >
-                <motion.h2 className="text-3xl font-bold mb-2" variants={fadeIn}>
+                <motion.h2 className="text-2xl sm:text-3xl font-bold mb-2" variants={fadeIn}>
                     Experience
                 </motion.h2>
 
-                <motion.div className="space-y-12 mt-8" variants={fadeIn} custom={0.4}>
+                <motion.div className="space-y-10 sm:space-y-12 mt-6 sm:mt-8" variants={fadeIn} custom={0.4}>
                     {/* CCBOND Experience */}
                     <div>
-                        <div className="flex justify-between items-start flex-col sm:flex-row">
+                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                             <div>
-                                <h3 className="text-xl font-semibold">Freelance Full Stack Developer</h3>
-                                <p className="text-gray-400 text-sm mt-1">CCBOND E-COMMERCE PVT LTD</p>
+                                <h3 className="text-lg sm:text-xl font-semibold">Freelance Full Stack Developer</h3>
+                                <p className="text-gray-400 text-xs sm:text-sm mt-1">CCBOND E-COMMERCE PVT LTD</p>
                             </div>
-                            <p className="text-gray-500 text-md mt-2 sm:mt-0">September 2024 – April 2025</p>
+                            <p className="text-gray-500 text-xs sm:text-md mt-2 sm:mt-0">September 2024 – April 2025</p>
                         </div>
 
-                        <ul className="list-disc list-inside mt-4 text-gray-300 text-md space-y-2">
+                        <ul className="list-disc list-inside mt-4 text-gray-300 text-sm sm:text-md space-y-2">
                             <li>Led end-to-end frontend development using React.js and Tailwind CSS to create a responsive UI,supporting digital product management for early chemical suppliers..
                             </li>
                             <li> Collaborated closely with the co-founder to define product requirements and ship 8+ core features.
@@ -50,15 +50,15 @@ const Experience = () => {
                             </li>
                         </ul>
                         <div className="flex flex-wrap gap-2 mt-4">
-                            <span className="text-white text-sm font-medium px-2 py-1 rounded">React</span>
-                            <span className="text-white text-sm font-medium px-2 py-1 rounded">Tailwind CSS</span>
-                            <span className="text-white text-sm font-medium px-2 py-1 rounded">MySQL</span>
-                            <span className="text-white text-sm font-medium px-2 py-1 rounded">Twilio</span>
-                            <span className="text-white text-sm font-medium px-2 py-1 rounded">JWT</span>
+                            <span className="text-white text-xs sm:text-sm font-medium px-2 py-1 rounded">React</span>
+                            <span className="text-white text-xs sm:text-sm font-medium px-2 py-1 rounded">Tailwind CSS</span>
+                            <span className="text-white text-xs sm:text-sm font-medium px-2 py-1 rounded">MySQL</span>
+                            <span className="text-white text-xs sm:text-sm font-medium px-2 py-1 rounded">Twilio</span>
+                            <span className="text-white text-xs sm:text-sm font-medium px-2 py-1 rounded">JWT</span>
                         </div>
 
-                        <div className="flex  mt-6 text-white">
-                            <a href="https://ccbonds.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline">
+                        <div className="flex mt-6 text-white">
+                            <a href="https://ccbonds.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:underline text-xs sm:text-sm">
                                 <ExternalLink size={18} /> Live Site
                             </a>
                         </div>
