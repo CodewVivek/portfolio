@@ -24,7 +24,7 @@ const About = () => {
   return (
     <section className="py-12 px-4 w-full bg-black text-white" id="About">
       <div className="max-w-xl mx-auto">
-        <div className="text-3xl font-bold mb-2 text-left">SAI VIVEK MANIKONDA</div>
+        <div className="text-3xl font-bold mb-2 text-left"> VIVEK </div>
         <div className="text-gray-400 text-xl mb-4 text-left">Software Developer</div>
         <div className="flex flex-wrap gap-4 mb-4 text-left text-base">
           <div className="flex items-center gap-2">
